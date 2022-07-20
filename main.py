@@ -56,22 +56,15 @@ sleep(7)  # Disables Notifications
 
 # -------------------- START MATCHING -------------------- #
 while True:
-    sleep(random.randint(1, 3))
+    sleep(random.randint(1, 3))  # How often it will attempt Swipe
     try:
         print("Swiping")
         like = driver.find_element(By.XPATH, '//body')
-        like.send_keys(Keys.ARROW_RIGHT)
-    except ElementClickInterceptedException:
+        like.send_keys(Keys.ARROW_RIGHT)  # Sends Right Key to swipe
 
-        try:
-            print("Popup")
-            driver.find_element(By.CSS_SELECTOR, ".ItsAMatch a").click()
-        except NoSuchElementException:
-            print("took too long to load")
-            sleep(2)
-        except:
-            driver.find_element(By.XPATH, '//*[@id="s369355022"]/div/div/div[3]/button[2]').click()
-            print("Out of Likes")
-            break
-
-
+        driver.execute_script('el = document.elementFromPoint(47, 457); el.click();')  # Clicks to Alleviate Out of Click Popup and Add to Home Screen
+    except:
+        # Placeholder to see if the Click will bypass if a Match is made
+        pass
+    
+# This runs continously so will have to be manually ended
