@@ -1,8 +1,6 @@
 # Auto-Tinder-Swiper
 
-This Automatically Logs you into Tinder Via Facebook Login (Hence why the user must have their FB account linked to their Tinder)
+Automatically logs you into Tinder Via FB, and then 'swipes' right on everyone. It can get rid of the popups and then continue 'swiping'
 
-It Automatically Swipes right on everyone and if a popup arises as a match occurs it will bypass. This Programme runs until you end it yourself or you run out of swipes
 
-NOTE OF DIFFICULTY:
-- Could not figure out how to press the like button on the card as a means of 'swiping right' and instead had to resort to using the Right Arrow to create the effect.
+As I couldn't get the program to simply click the like button, i had to resort to sending the Right-Arrow to the page to 'swipe'. However, as this was being sent to the page as a whole it took no notice of a popup and thus no errors could be picked up. I fixed this by making it click the screen after every attempted swipe to ensure that any popups will be closed. However, it remains to be seen if this will work on if the 'Its a Match' screen arises as i don't know if this is a popup or not.
