@@ -4,4 +4,4 @@ Automatically logs you into Tinder Via FB, and then 'swipes' right on everyone. 
 
 
 Problem:
-- I found that the id as found in the XPATH changes and so may have to be manually changed for it to work.
+- I found that the id (as found in the XPATH) changes and so may have to be manually changed for it to work.
