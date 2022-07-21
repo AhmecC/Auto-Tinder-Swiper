@@ -55,16 +55,16 @@ sleep(7)  # Disables Notifications
 
 
 # -------------------- START MATCHING -------------------- #
-while True:
-    sleep(random.randint(1, 3))  # How often it will attempt Swipe
+for i in range(0, 150):  # Stops code running forever (should allow for 100 ssuccesful swipes)
+        sleep(random.randint(1, 3))  # How often it will attempt Swipe
     try:
+        match_popup = driver.find_element(By.CSS_SELECTOR, ".itsAMatch a")
+        match_popup.click()
+        # Checks if match was made, and if true it clicks button to remove from screen (and allows swiping to continue)
+    except:
         print("Swiping")
         like = driver.find_element(By.XPATH, '//body')
         like.send_keys(Keys.ARROW_RIGHT)  # Sends Right Key to swipe
 
-        driver.execute_script('el = document.elementFromPoint(47, 457); el.click();')  # Clicks to Alleviate Out of Click Popup and Add to Home Screen
-    except:
-        # Placeholder to see if the Click will bypass if a Match is made
-        pass
-    
-# This runs continously so will have to be manually ended
+        driver.execute_script('el = document.elementFromPoint(47, 457); el.click();')
+        # Clicks to Alleviate Out of Click Popup and Add to Home Screen
