@@ -17,13 +17,13 @@ sleep(0.5)
 
 
 # -------------------- DIRECT TO FACEBOOK LOGIN -------------------- #
-driver.find_element(By.XPATH, '//*[@id="s2097736098"]/div/div[2]/div/div/div[1]/div[1]/button').click()
+driver.find_element(By.XPATH, '//*[@id="o1926512098"]/div/div[2]/div/div/div[1]/div[1]/button').click()
 # Accepts Tinder Cookies
 
-driver.find_element(By.XPATH, '//*[@id="s2097736098"]/div/div[1]/div/main/div[1]/div/div/div/div/header/div/div[2]/div[2]/a').click()
+driver.find_element(By.XPATH, '//*[@id="o1926512098"]/div/div[1]/div/main/div[1]/div/div/div/div/header/div/div[2]/div[2]/a').click()
 sleep(0.5)  # Finds the Login Button on Main Page
 
-driver.find_element(By.XPATH, '//*[@id="s369355022"]/div/div/div[1]/div/div/div[3]/span/div[2]/button').click()
+driver.find_element(By.XPATH, '//*[@id="o198131022"]/div/div/div[1]/div/div/div[3]/span/div[2]/button').click()
 sleep(1.5)  # Chooses Facebook as Login Option
 
 
@@ -47,10 +47,10 @@ sleep(5)  # Confirms Login
 # -------------------- ACCEPT PREFERENCES TINDER -------------------- #
 driver.switch_to.window(base_window)  # Switch Window Handle to Tinder
 
-driver.find_element(By.XPATH, '//*[@id="s369355022"]/div/div/div/div/div[3]/button[1]').click()
+driver.find_element(By.XPATH, '//*[@id="o198131022"]/div/div/div/div/div[3]/button[1]').click()
 sleep(0.5)  # Allows Location
 
-driver.find_element(By.XPATH, '//*[@id="s369355022"]/div/div/div/div/div[3]/button[2]').click()
+driver.find_element(By.XPATH, '//*[@id="o198131022"]/div/div/div/div/div[3]/button[2]').click()
 sleep(7)  # Disables Notifications
 
 
