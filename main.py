@@ -1,9 +1,8 @@
 from selenium import webdriver
-from selenium.common import ElementClickInterceptedException, NoSuchElementException
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from time import sleep
-import random
+from random import randint
 
 # -------------------- CONSTANTS -------------------- #
 path = r"CHROMEDRIVER LOCATION"
@@ -56,7 +55,7 @@ sleep(7)  # Disables Notifications
 
 # -------------------- START MATCHING -------------------- #
 for i in range(0, 150):  # Stops code running forever (should allow for 100 ssuccesful swipes)
-        sleep(random.randint(1, 3))  # How often it will attempt Swipe
+        sleep(randint(1, 3))  # How often it will attempt Swipe
     try:
         match_popup = driver.find_element(By.CSS_SELECTOR, ".itsAMatch a")
         match_popup.click()
