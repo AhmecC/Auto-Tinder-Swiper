@@ -5,4 +5,4 @@ Description:
 
 
 Encountered Problems:
-> I found that the id (as found in the XPATH) changes and so may have to be manually changed for it to work.
+> The id in the XPATH seems to change every day and thus has to be manually changed. I have included 2 constants to easily swap them out, and the IDs are easily found by inspecting the main page
