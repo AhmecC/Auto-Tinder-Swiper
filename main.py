@@ -9,6 +9,9 @@ path = r"CHROMEDRIVER LOCATION"
 LOGIN = "YOUR FB LOGIN"
 PASS = "YOUR FB PASS"
 
+id1 = "q-735651199"
+id2 = "q1830935021"
+
 # -------------------- CONNECT TO TINDER -------------------- #
 driver = webdriver.Chrome(executable_path=path)
 driver.get("https://tinder.com/")
